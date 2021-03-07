@@ -1,0 +1,17 @@
+
+
+# custom scripts on start up
+echo "====> checking custom scripts on startup..."
+if [ ! "$(ls -A /home/oracle/setup/custom_scripts)" ]
+then
+    echo "/home/oracle/setup/custom_scripts is empty!"
+else
+    echo "/home/oracle/setup/custom_scripts is not empty"
+for filename in /home/oracle/setup/custom_scripts/*.sql; do
+    echo echo "Executing file $filename..."
+    sqlplus / as sysdba 2>&1 <<EOF
+          @$filename;
+          exit;
+EOF
+done
+fi

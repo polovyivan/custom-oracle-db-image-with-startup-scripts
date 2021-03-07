@@ -1,0 +1,7 @@
+-- Create starter set
+CREATE TABLE TEST.PEOPLE(name VARCHAR2(10));
+INSERT INTO TEST.PEOPLE (name) VALUES ('Larry');
+INSERT INTO TEST.PEOPLE (name) VALUES ('Bruno');
+INSERT INTO TEST.PEOPLE (name) VALUES ('Gerald');
+COMMIT;
+exit;

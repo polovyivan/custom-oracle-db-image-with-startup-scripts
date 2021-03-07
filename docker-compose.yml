@@ -1,0 +1,15 @@
+version: '3'
+
+volumes:
+    db:
+        driver: local
+services:
+  oracle_db:
+    container_name: oracle_local
+    image: custom_oracle
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    volumes:
+      - /home/ivanpolovyi/projects/ultragaz/DB/Oracle/startup/scripts:/home/oracle/setup/custom_scripts
+ 
