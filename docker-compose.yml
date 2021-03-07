@@ -11,5 +11,5 @@ services:
       - "1521:1521"
       - "5500:5500"
     volumes:
-      - /home/ivanpolovyi/projects/ultragaz/DB/Oracle/startup/scripts:/home/oracle/setup/custom_scripts
+      - ./startup/scripts:/home/oracle/setup/custom_scripts
  
