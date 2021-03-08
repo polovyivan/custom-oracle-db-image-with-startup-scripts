@@ -167,7 +167,7 @@ fi
 
 # custom scripts on start up
 echo "====> checking for custom scripts on startup..."
-if [ ! "$(ls -A /home/oracle/setup/custom_scripts)" ]
+if [ ! "$(ls -A /home/oracle/setup/custom_scripts/*.sql)" ]
 then
     echo "/home/oracle/setup/custom_scripts is empty!"
 else
