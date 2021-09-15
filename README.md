@@ -1,5 +1,9 @@
-# custom-oracle-db-image-with-startup-scripts
-How to create custom oracle image with startup scripts
+<p align="center">
+  <img width="460" height="300" src="https://miro.medium.com/max/1400/1*udOn3m83TLnvp2FvKtMHGw.jpeg">
+</p>
+
+<h1 align="center"><a href="https://polovyiivan.medium.com/run-sql-startup-script-on-oracle-database-container-initialization-e94ea983dccd">Run SQL startup script on Oracle database container initialization</a></h1>
+
 
 # Commands used in this tutorial
 1. $ docker login
